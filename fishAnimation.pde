@@ -17,7 +17,7 @@ Fish newFish9;
 Fish newFish10;
 
 void setup(){
-  size(1680,1005);
+  size(750,500);
   bubbleList = new ArrayList<Bubble>();
   for(int i =0;i<bubbleNumber;i++){
     Bubble newBubble = new Bubble();
@@ -55,69 +55,69 @@ void draw(){
   
   // updates fish and new color after leaving screen
   newFish.update();
-  if (newFish.x >= 1730) {
+  if (newFish.x >= 780) {
     hue = random(361);
     newFish = new Fish(hue);
   }
   if (frameCount > 100) {
     newFish2.update();
-    if (newFish2.x >= 1730) {
+    if (newFish2.x >= 780) {
       hue = random(361);
       newFish2 = new Fish(hue);
     }
   }
   if (frameCount > 250) {
     newFish3.update();
-    if (newFish3.x >= 1730) {
+    if (newFish3.x >= 780) {
       hue = random(361);
       newFish3 = new Fish(hue);
     }
   }
   if (frameCount > 500) {
     newFish4.update();
-    if (newFish4.x >= 1730) {
+    if (newFish4.x >= 780) {
       hue = random(361);
       newFish4 = new Fish(hue);
     }
   }
   if (frameCount > 550) {
     newFish5.update();
-    if (newFish5.x >= 1730) {
+    if (newFish5.x >= 780) {
       hue = random(361);
       newFish5 = new Fish(hue);
     }
   }
   if (frameCount > 600) {
     newFish6.update();
-    if (newFish6.x >= 1730) {
+    if (newFish6.x >= 780) {
       hue = random(361);
       newFish6 = new Fish(hue);
     }
   }
   if (frameCount > 625) {
     newFish7.update();
-    if (newFish7.x >= 1730) {
+    if (newFish7.x >= 780) {
       hue = random(361);
       newFish7 = new Fish(hue);
     }
   }
   if (frameCount > 625) {
     newFish8.update();
-    if (newFish8.x >= 1730) {
+    if (newFish8.x >= 780) {
       hue = random(361);
       newFish8 = new Fish(hue);
     }
   }
   if (frameCount > 695) {
     newFish9.update();
-    if (newFish9.x >= 1730) {
+    if (newFish9.x >= 780) {
       hue = random(361);
       newFish9 = new Fish(hue);
     }
   }
   if (frameCount > 700) {
     newFish10.update();
-    if (newFish10.x >= 1730) {
+    if (newFish10.x >= 780) {
       hue = random(361);
       newFish10 = new Fish(hue);
     }
@@ -142,8 +142,8 @@ class Bubble {
     
     this.speed = new PVector(0, (random(0.5,1)));
     this.t = 0.001;
-    this.x = random(0,1685);
-    this.y = random(0,1010);
+    this.x = random(0,785);
+    this.y = random(0,510);
     this.r = random(10, 26);
     this.aShape = createShape(ELLIPSE,0,0,this.r,this.r);
     this.degree = random(0, 2*PI);
@@ -210,7 +210,7 @@ class Fish {
   float arc = 0;
   float angle = 0.0;
   float tailYmove;
-  float offset = random(-50, 900);
+  float offset = random(-50, 500);
   float scalar = random(10,30);
   float scalar2 = random(15,20);
   float speed = random(0.10);
@@ -335,7 +335,7 @@ class Leaf {
     pushMatrix();
     leaf.translate(x, height+10);
     leaf.rotate(PI + theta);
-    leafHeight = random(0,350);
+    leafHeight = random(0,150);
     leaf.translate(0, leafHeight);
     leaf.rotate(PI/4);
     leaf.scale(.25);
@@ -382,7 +382,7 @@ class Seaweed {
     
     //creating the actual stem and a random color
     noStroke();
-    stem = createShape(RECT, 0, 0, 5, 350);
+    stem = createShape(RECT, 0, 0, 5, 150);
     stroke(0);
     float red = 69 + random(-30,20);
     float green = 192 + random(-30,20);

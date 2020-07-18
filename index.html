@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Jessica Lau's website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -45,8 +45,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Jane Doe</b></h1>
-    <p>Photographer and Web Designer.</p>
+    <h1 class="w3-jumbo"><b>Jessica Lau</b></h1>
+    <p>Recent graduate || Programmer</p>
     <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
@@ -56,25 +56,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Portfolio Section -->
   <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
+    <h2 class="w3-text-grey">Projects</h2>
     <hr class="w3-opacity">
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
+	<div class="w3-container">
+		<h3 class="w3-opacity"><b>Processing Animation</b></h3>
+		<h4><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2020</h4>
+		<p>Using JavaScript and Processing, I created a looped animation with my group members</p>
+		<div class="w3-container w3-center">
+			<video width="500" height="400" controls loop>
+			<source src="fishAnimation.mp4" type="video/mp4">
+		</video></div>
 
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
+		<hr>
+	  </div>
+	  <div class="w3-container">
+		<h3 class="w3-opacity"><b>Elementum</b></h3>
+		<h4 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall 2019</h4>
+		<p>Hosted on a public server, I created a Phaser game with another group for game development experience</p>
+		<div class="w3-container w3-center">
+			<a href="https://github.com/samuelshumake/elementum">Link to our game files on Github!</a>
+		</div>
+		<hr>
+	  </div>
+	</div>
+
   <!-- End Portfolio Section -->
   </div>
 
@@ -82,100 +88,64 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About</h2>
     <hr class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>I'm a recent hard-working graduate seeking to enter the workforce and apply my knowledge to create software solutions. I've been trained to have patience in a laboratory setting, work well with others to come up with solutions, and have the diligence to analyze data and draw conclusions.
     </p>
-    <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Photography</p>
+    <h3 class="w3-padding-16">Skills</h3>
+    <p class="w3-wide">XCode</p>
     <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
     </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
+    <p class="w3-wide">Jupyter Lab</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-    </div><br>
-
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
     </div>
+    <p class="w3-wide">GitHub</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:55%">55%</div>
+	</div>
+	<p class="w3-wide">mySQL</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:30%">30%</div>
+	</div>
+	<p class="w3-wide">Processing</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+    </div><br>
+	
+	<h3 class="w3-padding-16">Programming Languages</h3>
+    <p class="w3-wide">Python</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
+    </div>
+    <p class="w3-wide">JavaScript</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:55%">55%</div>
+    </div>
+    <p class="w3-wide">Swift</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:40%">40%</div>
+    </div><br>
+	
+    <h3 class="w3-padding-24">Education</h3>
+    <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">August 2016 - May 2020</span> The University of Texas at Austin</p>
+	<p>Bachelor of Arts in Neuroscience and Computer Science</p>
+	<p><i>Other relevant coursework I have taken:</i> organic chemistry, game development, mobile computing, graphics and visualization, web programming, programming and data analysis for modern neuroscience, neural systems, genetics</p><br>
+	
+	<h3 class="w3-padding-24">Work Experience</h3>
+	<p><span class="w3-large w3-text-black w3-margin-right">Student Researcher</span> The University of Texas at Austin</p>
+	<p><i>August 2018 - May 2020</i></p>
+	<p>I worked under Dr. Hitoshi Morikawa in his laboratory and trained in electrophysiology. Our lab focused on drug addiction (specifically cocaine) and I managed feeding, running, and performing cocaine and food conditioning in rats.</p><br>
+	<p><span class="w3-large w3-text-black w3-margin-right">FRI Research Mentor</span> The University of Texas at Austin</p>
+	<p><i>January 2018 - June 2018</i></p>
+    <p>I worked as a mentor to demonstrate chemistry techniques, proper use of laboratory equipment, and oversaw laboratory safety for other students. My other responsibilities included synthesizing compounds, restocking all chemicals, and maintaining laboratory cleanliness and safety.</p><br>
+
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
       <i class="fa fa-download"></i> Download Resume
-    </button>
+	</button>
 
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24">My Reputation</h3>
-    <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
-    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
-   
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p><br>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
   <!-- End About Section -->
   </div>
 
@@ -185,9 +155,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Austin, TX</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 512-914-8029</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jessicacylau@gmail.com</p>
     </div>
     
     <!-- Image of location/map -->
@@ -201,7 +171,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i>  SEND MESSAGE
         </button>
       </p>
     </form>

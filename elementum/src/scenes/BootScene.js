@@ -10,7 +10,7 @@ export default class BootScene extends Phaser.Scene {
 	}
 
 	preload () {
-		this.load.image('mainmenu', './assets/images/mainmenu.png');
+		this.load.image('mainmenu', 'elementum/assets/images/mainmenu.png');
 
 		this.centerX = this.cameras.main.width / 2;
 		this.centerY = this.cameras.main.height / 2;

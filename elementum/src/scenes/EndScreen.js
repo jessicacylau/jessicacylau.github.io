@@ -8,7 +8,7 @@ export default class EndScreen extends Phaser.Scene {
 	init (data) {}
 
 	preload () {
-		this.load.image('endscreen', './assets/images/endscreen.png');
+		this.load.image('endscreen', './elementum/assets/images/endscreen.png');
 
 		this.centerX = this.cameras.main.width / 2;
 		this.centerY = this.cameras.main.height / 2;

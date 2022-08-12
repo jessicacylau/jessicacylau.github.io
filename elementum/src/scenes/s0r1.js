@@ -20,63 +20,63 @@ export default class s0r1 extends Phaser.Scene {
 
 	preload () {
 		/* ---------- LOADS SPRITE SHEETS ---------- */
-		this.load.spritesheet('player', './assets/spriteSheets/idleFinal.png', {
+		this.load.spritesheet('player', './elementum/assets/spriteSheets/idleFinal.png', {
 			frameHeight: 39,
 			frameWidth: 32,
 		});
-		this.load.spritesheet('lever', './assets/spriteSheets/lever.png',{
+		this.load.spritesheet('lever', './elementum/assets/spriteSheets/lever.png',{
 			frameHeight: 6,
 			frameWidth: 9
 	    });
-		this.load.spritesheet('run', './assets/spriteSheets/runPlayer.png',{
+		this.load.spritesheet('run', './elementum/assets/spriteSheets/runPlayer.png',{
 			frameHeight: 39,
 			frameWidth: 34
 	    });
-		this.load.spritesheet('slimeAni', './assets/spriteSheets/slimesprite-sheet.png',{
+		this.load.spritesheet('slimeAni', './elementum/assets/spriteSheets/slimesprite-sheet.png',{
 			frameHeight: 14,
 			frameWidth:	 21
 		});
-		this.load.spritesheet('water', './assets/spriteSheets/water.png', {
+		this.load.spritesheet('water', './elementum/assets/spriteSheets/water.png', {
 			frameHeight: 32,
 			frameWidth: 32,
 		});
-		this.load.spritesheet('earth', './assets/spriteSheets/earth.png', {
+		this.load.spritesheet('earth', './elementum/assets/spriteSheets/earth.png', {
 			frameHeight: 96,
 			frameWidth: 32,
 		});
-		this.load.spritesheet('fire', './assets/spriteSheets/fire.png', {
+		this.load.spritesheet('fire', './elementum/assets/spriteSheets/fire.png', {
 			frameHeight: 32,
 			frameWidth: 32,
 		});
-		this.load.spritesheet('air', './assets/spriteSheets/air.png', {
+		this.load.spritesheet('air', './elementum/assets/spriteSheets/air.png', {
 			frameHeight: 32,
 			frameWidth: 48,
 		});
-		this.load.spritesheet('pressurePlate', './assets/spriteSheets/pressureplate.png', {
+		this.load.spritesheet('pressurePlate', './elementum/assets/spriteSheets/pressureplate.png', {
 			frameHeight: 6,
 			frameWidth: 32
 		});
-		this.load.spritesheet('guiMana', './assets/spriteSheets/guiMana.png', {
+		this.load.spritesheet('guiMana', './elementum/assets/spriteSheets/guiMana.png', {
 			frameHeight: 32,
 			frameWidth: 32
 		});
-		this.load.spritesheet('guiSpell', './assets/spriteSheets/guiSpell.png', {
+		this.load.spritesheet('guiSpell', './elementum/assets/spriteSheets/guiSpell.png', {
 			frameHeight: 10,
 			frameWidth: 40
 		});
 
 		/* ---------- LOADS LEVEL TILEMAP ---------- */
-		this.load.image('tiles', './assets/images/tilemapv2.png');
-		this.load.tilemapTiledJSON('s0r1', './assets/map/s0r1.json')
+		this.load.image('tiles', './elementum/assets/images/tilemapv2.png');
+		this.load.tilemapTiledJSON('s0r1', './elementum/assets/map/s0r1.json')
 
 		/* ---------- LOADS SPRITES FOR GAME OBJECTS ---------- */
-		this.load.image('platform', './assets/sprites/platform.png');
-		this.load.image('spike', './assets/sprites/spike.png');
-		this.load.image('rock', './assets/sprites/rock.png');
-		this.load.image('box', './assets/sprites/box.png');
+		this.load.image('platform', './elementum/assets/sprites/platform.png');
+		this.load.image('spike', './elementum/assets/sprites/spike.png');
+		this.load.image('rock', './elementum/assets/sprites/rock.png');
+		this.load.image('box', './elementum/assets/sprites/box.png');
 
 		/*-----------Audio----------------------*/
-		this.load.audio("backgroundMusic","assets/sound/background.mp3");
+		this.load.audio("backgroundMusic","./elementum/assets/sound/background.mp3");
 
 	}	// ---------- END OF PRELOAD ---------- //
 

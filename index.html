@@ -167,12 +167,21 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./elementum/styles.css">
+<script src="./elementum/src/phaser/phaser.min.js"></script>
+<script src="./elementum/src/index.js" type="module"></script>
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+}
+#elementum-container {
+    width: 100%;
+    height: 100%;
 }
 
 /* Create a Parallax Effect */
@@ -205,12 +214,12 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
+/*@media only screen and (max-device-width: 1600px) {*/
+/*  .bgimg-1, .bgimg-2, .bgimg-3 {*/
+/*    background-attachment: scroll;*/
+/*    min-height: 400px;*/
+/*  }*/
+/*}*/
 </style>
 </head>
 <body>
@@ -222,46 +231,47 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#education" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> EDUCATION</a>
+    <a href="#about me" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT ME</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+<!--    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">-->
+<!--      <i class="fa fa-search"></i>-->
     </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+    <a href="#about me" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
     <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+<!--    <a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Jessica <span class="w3-hide-small">Lau</span> </span>
-  </div>
+<!--  <div class="w3-display-middle" style="white-space:nowrap;">-->
+<!--    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Jessica <span class="w3-hide-small">Lau</span> </span>-->
+<!--  </div>-->
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="education">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Data Scientist wannabe</em></p>
+<div class="w3-content w3-container w3-padding-64" id="about me">
+  <h3 class="w3-center">JESSICA LAU</h3>
+  <p class="w3-center"><em>data scientist wannabe</em></p>
   <p>something something something something something</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Jessica Lau</b></p><br>
-      <img src="pfp.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="me and a vampire squid" width="500" height="333">
-    </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. something something something</p>
-    </div>
-  </div>
+<!--  <div class="w3-row">-->
+<!--    <div class="w3-col m6 w3-center w3-padding-large">-->
+<!--      <p><b><i class="fa fa-map-marker w3-margin-right"></i>Jessica Lau</b></p><br>-->
+<!--      <img src="pfp.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="me and a vampire squid" width="500" height="333">-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Hide this text on small devices &ndash;&gt;-->
+<!--    <div class="w3-col m6 w3-hide-small w3-padding-large">-->
+<!--      <p>Welcome to my website. something something something</p>-->
+<!--    </div>-->
+<!--  </div>-->
 <!--  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>-->
 <!--  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>-->
 <!--  <div class="w3-light-grey">-->
@@ -275,6 +285,32 @@ body, html {
 <!--  <div class="w3-light-grey">-->
 <!--    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>-->
 <!--  </div>-->
+
+  <h3 class="w3-center">EDUCATION</h3>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-map-marker w3-margin-right"></i>The University of Texas at Austin</b></p><br>
+      <img src="cns.jpg" class="w3-round w3-image w3-hover-opacity-off " alt="The University of Texas at Austin" width="300" height="300">
+    </div>
+
+    <div class="w3-large m6 w3-padding-large">
+      <p><b>January 2021 - December 2022, </b> <i>UT Austin</i> <br>
+      MSc, <i>Data Science</i> <br> <br>
+      <b>August 2016 - May 2020, </b> <i>UT Austin</i><br>
+      BSA, <i>Neuroscience & Computer Science</i></p>
+    </div>
+  </div>
+
+  <h3 class="w3-center">SKILLS</h3>
+  <div class="w3-large m6 w3-padding-large">
+  <p>
+    <b>Programming Languages:</b> R, Python, JavaScript, HTML, CSS, Swift, SQL, Git. <br> <br>
+    <b>Languages:</b> English <i>(native)</i>, Cantonese <i>(conversational)</i> <br> <br>
+    <b>Tools:</b> RStudio, XCode, GitHub, Processing, Jupyter Lab, Prism, PyTorch, SciPy, MySQL. <br> <br>
+    <b>Data Science Skills:</b> machine learning, natural language processing, regression, probability & statistics, deep learning, data structures & algorithms, data visualization, causal inference, web development, mobile app development <br> <br>
+    <b>Neuroscience Skills:</b> electrophysiology, biostatistics, neuroscience data analysis, research <br> <br>
+  </p>
 </div>
 
 <!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">-->
@@ -306,7 +342,20 @@ body, html {
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="projects">
   <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>something something something <br> something something </em></p><br>
+
+  <div class="w3-center">
+		<video style="width:100%" autoplay loop>
+		<source src="fishAnimation.mp4" type="video/mp4">
+		</video>
+  </div>
+
+  <p class="w3-center"><em>something something something <br> something something </em></p>
+
+  <div class="w3-center w3-hide-small" id="elementum-container"></div>
+  <div class="w3-center">
+          <a href="https://github.com/samuelshumake/elementum" style="color:lightskyblue">Link to our game files on GitHub!</a>
+  </div>
 
 <!--  &lt;!&ndash; Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) &ndash;&gt;-->
 <!--  <div class="w3-row-padding w3-center">-->
@@ -359,18 +408,18 @@ body, html {
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT ME</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">QUESTIONS?</h3>
-  <p class="w3-center"><em>Feel free to reach out!</em></p>
+  <p class="w3-center"><em>I play table tennis, think you can beat me? Feel free to reach out!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+      <img src="pfp2.jpg" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">

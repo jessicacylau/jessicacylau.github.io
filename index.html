@@ -180,10 +180,8 @@ body, html {
   line-height: 1.8;
 }
 #elementum-container {
-    width: 100%;
-    height: 640px;
-    min-height: 100%;
-    min-width: 80%;
+    min-height: 600px;
+    min-width: 1025px;
 }
 
 /* Create a Parallax Effect */
@@ -262,7 +260,7 @@ body, html {
   <h3 class="w3-center">ABOUT ME</h3>
   <h3 class="w3-center">Jessica Lau</h3>
   <p class="w3-center"><em>data scientist wannabe</em></p>
-  <p class="w3-center"> something something something something something</p>
+  <p class="w3-center"> recent masters grad looking to get my foot in the door to become a data scientist</p>
 
 <!--  <div class="w3-row">-->
 <!--    <div class="w3-col m6 w3-center w3-padding-large">-->
@@ -294,7 +292,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-map-marker w3-margin-right"></i>The University of Texas at Austin</b></p><br>
-      <img src="cns.png" class="w3-round w3-image w3-hover-opacity-off " alt="The University of Texas at Austin" width="250" height="250">
+      <img src="cns.png" class="w3-round w3-image w3-hover-opacity-off " alt="The University of Texas at Austin" width="150" height="150">
     </div>
 
     <div class="w3-large m6 w3-padding-large">
@@ -321,6 +319,7 @@ body, html {
     </button></a>
   </div>
 
+  </div>
 </div>
 
 <!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">-->
@@ -354,7 +353,7 @@ body, html {
   <h3 class="w3-center">MY PROJECTS</h3>
 
   <p class="w3-large m6 w3-padding-large">August 2020, <em>Processing Animation</em><br>
-  <p> Fun screensaver animation idea created in Processing <em>(JavaScript)</em></p><br>
+    <span class="w3-medium w3-padding-large"> Fun screensaver animation idea created in Processing <em>(JavaScript)</em></span><br></p>
 
   <div class="w3-center">
 		<video style="width:100%" loop autoplay muted id="fish">
@@ -365,11 +364,13 @@ body, html {
         </script>
   </div>
 
-  <p class="w3-large m6 w3-padding-large">Spring 2019, <em>Elementum</em><br>
-  <p> 2D puzzle platformer made in Phaser with original art & music and level designs. Created in collaboration with Edward Mbata and Samuel Shumake. <em>(JavaScript, HTML)</em></p><br>
-  <p class="w3-center"><em>Please ensure the screen is wide enough to fit the full game in order to play. Currently, the game does not work on mobile devices or if the screen is too small.<br> If you encounter any errors, please reload the page! <br>Thank you for your understanding!</em></p><br>
+  <p class="w3-large m6 w3-padding-large">January - May 2019, <em>Elementum</em><br>
+    <span class="w3-medium w3-padding-large"> 2D puzzle platformer made in Phaser with original art & music and level designs. Created in collaboration with Edward Mbata and Samuel Shumake. <em>(JavaScript, HTML)</em></span><br></span></p>
 
-  <div class="w3-center w3-hide-small w3-hide-medium" id="elementum-container"></div>
+  <p class="w3-large w3-center w3-hide-large"><em>Sorry about that! The screen is too small to play. Currently, the game does not work if the screen is too small or on mobile devices. Thanks for understanding!</em><br></p>
+  <p class="w3-center"> <em> PLEASE RELOAD THE PAGE <br> If you resize the screen, encounter any errors, or want to replay the game.<br>Thanks for playing!</em></p><br>
+
+  <div class="container-fluid w3-hide-small w3-hide-medium" id="elementum-container"></div>
   <div class="w3-center">
           <a href="https://github.com/samuelshumake/elementum" style="color:lightskyblue"><br>Link to our game files on GitHub</a>
   </div>
@@ -467,12 +468,12 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/jessicacylau" title="My Facebook" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/littlelaupau" title="My Instagram" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 <!--    <i class="fa fa-snapchat w3-hover-opacity"></i>-->
 <!--    <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
 <!--    <i class="fa fa-twitter w3-hover-opacity"></i>-->
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/jessica-lau-9822611ab" title="My LinkedIn Profile" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
@@ -507,6 +508,5 @@ function toggleFunction() {
     }
 }
 </script>
-
 </body>
 </html>

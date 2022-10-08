@@ -182,6 +182,8 @@ body, html {
 #elementum-container {
     width: 100%;
     height: 100%;
+    min-height: 100%;
+    min-width: 80%;
 }
 
 /* Create a Parallax Effect */
@@ -233,7 +235,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about me" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT ME</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT ME</a>
 <!--    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">-->
 <!--      <i class="fa fa-search"></i>-->
     </a>
@@ -243,23 +245,24 @@ body, html {
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about me" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
     <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT ME</a>
 <!--    <a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-<!--  <div class="w3-display-middle" style="white-space:nowrap;">-->
-<!--    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Jessica <span class="w3-hide-small">Lau</span> </span>-->
-<!--  </div>-->
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">Hi there, I'm Jess<span class="w3-hide-small"></span> </span>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about me">
-  <h3 class="w3-center">JESSICA LAU</h3>
+  <h3 class="w3-center">ABOUT ME</h3>
+  <h3 class="w3-center">Jessica Lau</h3>
   <p class="w3-center"><em>data scientist wannabe</em></p>
-  <p>something something something something something</p>
+  <p class="w3-center"> something something something something something</p>
 
 <!--  <div class="w3-row">-->
 <!--    <div class="w3-col m6 w3-center w3-padding-large">-->
@@ -291,7 +294,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-map-marker w3-margin-right"></i>The University of Texas at Austin</b></p><br>
-      <img src="cns.jpg" class="w3-round w3-image w3-hover-opacity-off " alt="The University of Texas at Austin" width="300" height="300">
+      <img src="cns.png" class="w3-round w3-image w3-hover-opacity-off " alt="The University of Texas at Austin" width="300" height="300">
     </div>
 
     <div class="w3-large m6 w3-padding-large">
@@ -305,12 +308,19 @@ body, html {
   <h3 class="w3-center">SKILLS</h3>
   <div class="w3-large m6 w3-padding-large">
   <p>
-    <b>Programming Languages:</b> R, Python, JavaScript, HTML, CSS, Swift, SQL, Git. <br> <br>
+    <b>Programming Languages:</b> R, Python, JavaScript, HTML, CSS, Swift, SQL, Git <br> <br>
     <b>Languages:</b> English <i>(native)</i>, Cantonese <i>(conversational)</i> <br> <br>
-    <b>Tools:</b> RStudio, XCode, GitHub, Processing, Jupyter Lab, Prism, PyTorch, SciPy, MySQL. <br> <br>
+    <b>Tools:</b> RStudio, XCode, GitHub, Processing, Jupyter Lab, Prism, PyTorch, SciPy, MySQL <br> <br>
     <b>Data Science Skills:</b> machine learning, natural language processing, regression, probability & statistics, deep learning, data structures & algorithms, data visualization, causal inference, web development, mobile app development <br> <br>
     <b>Neuroscience Skills:</b> electrophysiology, biostatistics, neuroscience data analysis, research <br> <br>
   </p>
+
+  <div class="w3-center">
+    <a href="Resume_Jessica%20Lau.pdf" download><button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button></a>
+  </div>
+
 </div>
 
 <!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">-->
@@ -335,26 +345,30 @@ body, html {
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+    <span class="w3-xxlarge w3-text-white w3-wide w3-center">&emsp;&ensp;&nbsp;MY<br>PROJECTS</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="projects">
   <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center"><em>something something something <br> something something </em></p><br>
+  <p>August 2020, <em>Processing Animation</em><br> Fun screensaver animation idea created in Processing <em>(JavaScript)</em></p><br>
 
   <div class="w3-center">
-		<video style="width:100%" autoplay loop>
+		<video style="width:100%" loop autoplay muted id="fish">
 		<source src="fishAnimation.mp4" type="video/mp4">
 		</video>
+        <script>
+          document.getElementById('fish').play();
+        </script>
   </div>
 
-  <p class="w3-center"><em>something something something <br> something something </em></p>
+  <p>Spring 2019, <em>Elementum</em><br> 2D puzzle platformer made in Phaser with original art & music and level designs. Created in collaboration with Edward Mbata and Samuel Shumake. <em>(JavaScript, HTML)</em></p><br>
+  <p class="w3-center"><em>(Please ensure the screen is wide enough to fit the full game in order to play. Currently, the game does not work on mobile devices or if the screen is too small.<br>Thank you for your understanding.</em></p><br>
 
-  <div class="w3-center w3-hide-small" id="elementum-container"></div>
+  <div class="w3-center w3-hide-small w3-hide-medium" id="elementum-container"></div>
   <div class="w3-center">
-          <a href="https://github.com/samuelshumake/elementum" style="color:lightskyblue">Link to our game files on GitHub!</a>
+          <a href="https://github.com/samuelshumake/elementum" style="color:lightskyblue"><br>Link to our game files on GitHub</a>
   </div>
 
 <!--  &lt;!&ndash; Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) &ndash;&gt;-->
@@ -408,18 +422,18 @@ body, html {
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide w3-center">CONTACT<br>&emsp;&nbsp;&nbsp;ME</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">QUESTIONS?</h3>
-  <p class="w3-center"><em>I play table tennis, think you can beat me? Feel free to reach out!</em></p>
+  <p class="w3-center"><em>I play table tennis; think you can beat me? Feel free to reach out!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="pfp2.jpg" class="w3-image w3-round" style="width:100%">
+      <img src="pfp.jpg" class="w3-image w3-round" style="width:100%">
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
@@ -452,9 +466,9 @@ body, html {
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
+<!--    <i class="fa fa-snapchat w3-hover-opacity"></i>-->
+<!--    <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+<!--    <i class="fa fa-twitter w3-hover-opacity"></i>-->
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
